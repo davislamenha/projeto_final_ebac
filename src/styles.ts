@@ -24,6 +24,11 @@ img {
   max-width: 100%;
 }
 
+button {  
+  border: none;
+  font-weight: 700;
+}
+
 .container {
   margin: 0 auto;
   width: min(100% - 30px, 1440px);

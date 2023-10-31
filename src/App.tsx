@@ -1,11 +1,11 @@
-import Hero from './components/Hero';
+import Home from './pages/Home';
 import { GlobalStyle } from './styles';
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Hero />
+      <Home />
     </>
   );
 }
