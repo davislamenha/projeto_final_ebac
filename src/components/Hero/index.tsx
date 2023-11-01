@@ -4,8 +4,10 @@ import { HeroBackground, Title } from './styles';
 const Hero = () => {
   return (
     <HeroBackground>
-      <Logo />
-      <Title>Viva experiências gastronômicas no conforto da sua casa</Title>
+      <div className="container">
+        <Logo />
+        <Title>Viva experiências gastronômicas no conforto da sua casa</Title>
+      </div>
     </HeroBackground>
   );
 };

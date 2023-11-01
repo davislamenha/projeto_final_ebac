@@ -28,7 +28,7 @@ const Restaurant = ({
   rate,
 }: RestaurantProps) => {
   return (
-    <Card>
+    <Card href="#">
       <TagsContainer>
         {infos.map((info) => {
           return <Tag children={info} key={info} />;

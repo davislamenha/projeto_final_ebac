@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 import { colors } from '../../styles';
 
-export const Card = styled.div`
+export const Card = styled.a`
   position: relative;
+  transition: 0.35s ease-in;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
 `;
 
 export const TagsContainer = styled.div`
@@ -20,6 +25,9 @@ export const Body = styled.div`
   border: 1px solid ${colors.primaryColor};
   border-top: 0px;
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  height: 210px;
 `;
 
 export const Header = styled.div`
@@ -44,11 +52,12 @@ export const Description = styled.p`
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: 16px;
 `;
 
 export const Button = styled.button`
   padding: 4px 6px;
   background-color: ${colors.primaryColor};
   color: ${colors.secondaryColor};
+  margin-top: auto;
+  align-self: flex-start;
 `;

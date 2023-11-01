@@ -15,6 +15,10 @@ export const GlobalStyle = createGlobalStyle`
 font-family: 'Roboto', sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   background-color: ${colors.background};
 }
@@ -24,7 +28,12 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 button {  
+  cursor: pointer;
   border: none;
   font-weight: 700;
 }

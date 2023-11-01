@@ -6,11 +6,14 @@ import { colors } from '../../styles';
 export const HeroBackground = styled.header`
   padding: 40px 0;
   background-image: url(${background});
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   color: ${colors.primaryColor};
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 `;
 
 export const Title = styled.h1`
