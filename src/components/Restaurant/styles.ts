@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { colors } from '../../styles';
+import { Link } from 'react-router-dom';
 
-export const Card = styled.a`
+export const Card = styled(Link)`
   position: relative;
   transition: 0.35s ease-in;
 

@@ -1,14 +1,16 @@
+import { BrowserRouter } from 'react-router-dom';
+
 import Footer from './components/Footer';
-import Home from './pages/Home';
 import { GlobalStyle } from './styles';
+import Rotas from './routes';
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <GlobalStyle />
-      <Home />
+      <Rotas />
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 

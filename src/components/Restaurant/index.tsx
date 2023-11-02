@@ -13,26 +13,31 @@ import {
 } from './styles';
 
 type RestaurantProps = {
+  id: number;
   title: string;
   description: string;
-  infos: string[];
+  infos?: string[];
+  cuisine: string;
   rate: number;
   image: string;
 };
 
 const Restaurant = ({
+  id,
   title,
   description,
   image,
   infos,
+  cuisine,
   rate,
 }: RestaurantProps) => {
   return (
-    <Card href="#">
+    <Card to={`/perfil/${id}`}>
       <TagsContainer>
-        {infos.map((info) => {
+        {infos?.map((info) => {
           return <Tag children={info} key={info} />;
         })}
+        <Tag children={cuisine} />
       </TagsContainer>
       <img src={image} alt={title} />
       <Body>
