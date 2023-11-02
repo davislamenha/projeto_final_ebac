@@ -2,13 +2,8 @@ import styled from 'styled-components';
 import { colors } from '../../styles';
 import { Link } from 'react-router-dom';
 
-export const Card = styled(Link)`
+export const Card = styled.div`
   position: relative;
-  transition: 0.35s ease-in;
-
-  &:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
 `;
 
 export const TagsContainer = styled.div`
@@ -55,7 +50,7 @@ export const Description = styled.p`
   line-height: 1.5;
 `;
 
-export const Button = styled.button`
+export const Button = styled(Link)`
   padding: 4px 6px;
   background-color: ${colors.primaryColor};
   color: ${colors.secondaryColor};

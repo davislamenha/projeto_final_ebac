@@ -32,7 +32,7 @@ const Restaurant = ({
   rate,
 }: RestaurantProps) => {
   return (
-    <Card to={`/perfil/${id}`}>
+    <Card>
       <TagsContainer>
         {infos?.map((info) => {
           return <Tag children={info} key={info} />;
@@ -49,7 +49,7 @@ const Restaurant = ({
           </Review>
         </Header>
         <Description>{description}</Description>
-        <Button>Saiba mais</Button>
+        <Button to={`/perfil/${id}`}>Saiba mais</Button>
       </Body>
     </Card>
   );
